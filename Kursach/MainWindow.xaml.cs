@@ -38,9 +38,11 @@ namespace Kursach
             InitializePlayers();
             Logic_sAlgorithms.MixCards(ref BigCardsArray);
             Logic_sAlgorithms.LayingCards(ref BigCardsArray, ref CardsStore);
+            MessageBox.Show(CardsStore.Count.ToString());
             PlayersCards[0] = Logic_sAlgorithms.DistributeCards(ref PlayersCards[0], ref CardsStore);
             Logic_sAlgorithms.LookCards(ref PlayersCards[0], ref PlayerCardsImage);
 
+            MessageBox.Show(CardsStore.Count.ToString());
 
         }
     }
