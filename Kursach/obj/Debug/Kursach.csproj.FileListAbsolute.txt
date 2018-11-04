@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Kursach\Kursach\bin\Debug\Kursach.exe.config
+C:\Users\User\Desktop\Kursach\Kursach\bin\Debug\Kursach.exe
+C:\Users\User\Desktop\Kursach\Kursach\bin\Debug\Kursach.pdb
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach_MarkupCompile.cache
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach_MarkupCompile.lref
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.g.resources
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.Properties.Resources.resources
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.exe
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.pdb
