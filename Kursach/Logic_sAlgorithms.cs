@@ -76,5 +76,10 @@ namespace Kursach
                 Pl_CardsImage[index].Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Kursach;component/CardsImage/"+ Pl_Cards[index] +".png")));
             }
         }
+
+        public static void BeatCard(float _Card, float _EnemyCard ,int _TrumpCard)
+        {
+
+        }
     }
 }
