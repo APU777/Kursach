@@ -22,12 +22,25 @@ namespace Kursach
         public Menu()
         {
             InitializeComponent();
-            
         }
 
-        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Two_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
             MainWindow MW = new MainWindow(2);
+            MW.Show();
+            Close();
+        }
+
+        private void Three_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow MW = new MainWindow(3);
+            MW.Show();
+            Close();
+        }
+
+        private void Four_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow MW = new MainWindow(4);
             MW.Show();
             Close();
         }

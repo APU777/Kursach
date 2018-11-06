@@ -185,7 +185,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 86 "..\..\MainWindow.xaml"
+        #line 85 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label AFourthLittle_Field;
         
@@ -193,7 +193,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 87 "..\..\MainWindow.xaml"
+        #line 86 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label BFourthLittle_Field;
         
@@ -201,7 +201,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 89 "..\..\MainWindow.xaml"
+        #line 88 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label AFifthLittle_Field;
         
@@ -209,7 +209,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 90 "..\..\MainWindow.xaml"
+        #line 89 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label BFifthLittle_Field;
         
@@ -217,7 +217,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 92 "..\..\MainWindow.xaml"
+        #line 91 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label ASixthLittle_Field;
         
@@ -225,7 +225,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 93 "..\..\MainWindow.xaml"
+        #line 92 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label BSixthLittle_Field;
         
@@ -233,7 +233,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 109 "..\..\MainWindow.xaml"
+        #line 106 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Card_One;
         
@@ -241,7 +241,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 123 "..\..\MainWindow.xaml"
+        #line 120 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Card_Two;
         
@@ -249,7 +249,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 124 "..\..\MainWindow.xaml"
+        #line 121 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Card_Three;
         
@@ -257,7 +257,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 125 "..\..\MainWindow.xaml"
+        #line 122 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Card_Four;
         
@@ -265,7 +265,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 126 "..\..\MainWindow.xaml"
+        #line 123 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Card_Five;
         
@@ -273,7 +273,7 @@ namespace Kursach {
         #line hidden
         
         
-        #line 127 "..\..\MainWindow.xaml"
+        #line 124 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Card_Six;
         

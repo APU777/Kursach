@@ -15,3 +15,5 @@ C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.exe
 C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Kursach.pdb
 C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Menu.g.cs
 C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Menu.baml
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\App.baml
+C:\Users\User\Desktop\Kursach\Kursach\obj\Debug\Dictionary.baml

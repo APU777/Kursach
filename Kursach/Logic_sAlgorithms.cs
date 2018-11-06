@@ -77,9 +77,12 @@ namespace Kursach
             }
         }
 
-        public static void BeatCard(float _Card, float _EnemyCard ,int _TrumpCard)
+        public static bool BeatCard(float _Card, float _EnemyCard ,int _TrumpCard)
         {
-
+            if (_Card > _EnemyCard || (int)_Card == _TrumpCard && (int)_Card != (int)_EnemyCard)
+                return true;
+            else
+                return false;
         }
     }
 }
