@@ -23,7 +23,7 @@ namespace Kursach
         private static Queue<float> CardsStore = new Queue<float>();
         private static Label[] PlayerCardsImage = null;
         private static List<float>[] PlayersCards = null;
-
+        
         private void InitializePlayers()
         {
             PlayerCardsImage = new Label[6] { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Six };
@@ -40,13 +40,33 @@ namespace Kursach
             QuantityPlayers = QtyPL;
             InitializeComponent();
             InitializePlayers();
-
-
+            
+           
             Logic_sAlgorithms.MixCards(ref BigCardsArray);
-            Logic_sAlgorithms.LayingCards(ref BigCardsArray, ref CardsStore);
+            Logic_sAlgorithms.LayingCardsINDeck(ref BigCardsArray, ref CardsStore);
 
-            PlayAlgorithms.ShareOutCards(ref PlayersCards, ref CardsStore);
-            Logic_sAlgorithms.LookCards(ref PlayersCards[0], ref PlayerCardsImage);
+            PlayAlgorithms.TrumpCARD(ref LearImg, ref BigCardsArray);
+
+
         }
+
+        private void Give_Up_MouseMove(object sender, MouseEventArgs e)
+        {
+          //  if (Give_Up.IsMouseOver)
+                //Pass.FontSize = 20;
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+           // if (!Give_Up.IsMouseOver)
+               // Pass.FontSize = 30;
+        }
+
+        private void Give_Up_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+          
+        }
+
+       
     }
 }

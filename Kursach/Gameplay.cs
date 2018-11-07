@@ -8,6 +8,9 @@ namespace Kursach
 {
     class Gameplay
     {
-      
+      public void TakeCards()
+        {
+
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kursach"
         mc:Ignorable="d"
-        Title="Kursach" Height="450" Width="800">
+        Title="Kursach" Height="450" Width="800" MouseMove="Window_MouseMove">
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition Height="47*"/>
@@ -25,7 +25,7 @@
         <Label x:Name="Player_Three" Grid.Row="0" Grid.Column="2" Background="LawnGreen"></Label>
 
         <Label x:Name="Head_Field"  Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Aqua" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
-            <Grid>
+            <Grid x:Name="BigField">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -60,9 +60,14 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Image x:Name="LearImg" Source="C:\Users\User\Pictures\Star.jpg" Grid.Row="3" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="3" ></Image>
+                <Label x:Name="LearImg" Margin="5" Grid.Row="3" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="4"></Label>
+                <TextBlock x:Name="TB_QtyCards" Foreground="White" Grid.Row="3" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="4" FontFamily="Comic Sans MS" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">36</TextBlock>
 
-                <Label x:Name="Give_Up" Grid.Row="8" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Goldenrod"></Label>
+                <Button x:Name="BUTBeated" Style="{DynamicResource LabelButtonPush}" Content="Beated" Grid.Row="8" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+
+                <Button x:Name="BUTTake" Style="{DynamicResource LabelButtonPush}" Content="Take" Grid.Row="8" Grid.RowSpan="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+                <Button x:Name="Give_Up" Style="{StaticResource PassPlayer}" Content="Pass" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="4" MouseDown="Give_Up_MouseDown"/>
 
                 <Label x:Name="FirstBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="4" Grid.ColumnSpan="3"></Label>
                 <Label x:Name="SecondBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="5" Grid.ColumnSpan="3"></Label>
