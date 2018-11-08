@@ -69,14 +69,14 @@
 
                 <Button x:Name="Give_Up" Style="{StaticResource PassPlayer}" Content="Pass" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="4" MouseDown="Give_Up_MouseDown"/>
 
-                <Label x:Name="FirstBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="4" Grid.ColumnSpan="3"></Label>
-                <Label x:Name="SecondBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="5" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="FirstBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="5" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="SecondBig_Field" Margin="2" Grid.Row="2" Grid.RowSpan="9" Grid.Column="6" Grid.ColumnSpan="3"></Label>
                 
-                <Label x:Name="ThirdBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="8" Grid.ColumnSpan="3"></Label>
-                <Label x:Name="FourthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="9" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="ThirdBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="9" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="FourthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="10" Grid.ColumnSpan="3"></Label>
 
-                <Label x:Name="FifthBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="12" Grid.ColumnSpan="3"></Label>
-                <Label x:Name="SixthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="13" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="FifthBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="13" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="SixthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="14" Grid.ColumnSpan="3"></Label>
 
                 <Label x:Name="AFirstLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="4" Grid.ColumnSpan="2"></Label>
                 <Label x:Name="BFirstLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="5" Grid.ColumnSpan="2"></Label>
