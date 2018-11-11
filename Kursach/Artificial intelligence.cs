@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace Kursach
 {
-    class Gameplay
+    class Artificial_intelligence
     {
-        public void Begin(int Qty_PL)
-        {
-            if (Qty_PL == 2)
-            {
 
-            }
-
-        }
     }
 }

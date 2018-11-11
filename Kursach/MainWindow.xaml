@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kursach"
         mc:Ignorable="d"
-        Title="Kursach" Height="450" Width="800" MouseMove="Window_MouseMove">
-    <Grid ShowGridLines="False">
+        Title="Kursach" Height="450" Width="800" MouseMove="Window_MouseMove" WindowStartupLocation="CenterScreen">
+    <Grid Background="DarkBlue" ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition Height="47*"/>
             <RowDefinition Height="47*"/>
@@ -14,17 +14,38 @@
             <RowDefinition Height="75*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="243*"/>
+            <ColumnDefinition Width="264*"/>
+            <ColumnDefinition Width="265*"/>
         </Grid.ColumnDefinitions>
 
+        <Grid Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
 
-        <Label x:Name="Player_One" Grid.Row="0" Grid.Column="0" Background="Green"></Label>
-        <Label x:Name="Player_Two" Grid.Row="0" Grid.Column="1" Background="GreenYellow"></Label>
-        <Label x:Name="Player_Three" Grid.Row="0" Grid.Column="2" Background="LawnGreen"></Label>
-
-        <Label x:Name="Head_Field"  Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Aqua" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            </Grid.ColumnDefinitions>
+            <Label x:Name="Player_One" Grid.Row="0" Grid.Column="2" Background="Green" Grid.RowSpan="2" Grid.ColumnSpan="2"></Label>
+            <Label x:Name="Player_Two" Grid.Row="0" Grid.Column="5" Background="GreenYellow" Grid.RowSpan="2" Grid.ColumnSpan="2"></Label>
+            <Label x:Name="Player_Three" Grid.Row="0" Grid.Column="8" Background="LawnGreen" Grid.ColumnSpan="2" Grid.RowSpan="2"></Label>
+        </Grid>
+        <Label x:Name="Head_Field" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="4" Background="Black" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,94,-0.4,0.4">
             <Grid x:Name="BigField">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -69,37 +90,37 @@
 
                 <Button x:Name="Give_Up" Style="{StaticResource PassPlayer}" Content="Pass" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="4" MouseDown="Give_Up_MouseDown"/>
 
-                <Label x:Name="FirstBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="5" Grid.ColumnSpan="3"></Label>
-                <Label x:Name="SecondBig_Field" Margin="2" Grid.Row="2" Grid.RowSpan="9" Grid.Column="6" Grid.ColumnSpan="3"></Label>
-                
-                <Label x:Name="ThirdBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="9" Grid.ColumnSpan="3"></Label>
-                <Label x:Name="FourthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="10" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="FirstBig_Field" Grid.Row="0" Grid.RowSpan="10" Grid.Column="5" Grid.ColumnSpan="4" MouseDown="FirstBig_Field_MouseDown" Margin="0.4,1,43,14.6"></Label>
+                <Label x:Name="SecondBig_Field" Margin="2" Grid.Row="2" Grid.RowSpan="9" Grid.Column="6" Grid.ColumnSpan="3" MouseDown="SecondBig_Field_MouseDown"></Label>
 
-                <Label x:Name="FifthBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="13" Grid.ColumnSpan="3"></Label>
-                <Label x:Name="SixthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="14" Grid.ColumnSpan="3"></Label>
+                <Label x:Name="ThirdBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="9" Grid.ColumnSpan="3" MouseDown="ThirdBig_Field_MouseDown"></Label>
+                <Label x:Name="FourthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="10" Grid.ColumnSpan="3" MouseDown="FourthBig_Field_MouseDown"></Label>
 
-                <Label x:Name="AFirstLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="4" Grid.ColumnSpan="2"></Label>
-                <Label x:Name="BFirstLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="5" Grid.ColumnSpan="2"></Label>
-                
-                <Label x:Name="ASecondLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="9" Grid.ColumnSpan="2"></Label>
-                <Label x:Name="BSecondLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="10" Grid.ColumnSpan="2"></Label>
+                <Label x:Name="FifthBig_Field" Grid.Row="0" Grid.RowSpan="9" Grid.Column="13" Grid.ColumnSpan="3" MouseDown="FifthBig_Field_MouseDown"></Label>
+                <Label x:Name="SixthBig_Field" Grid.Row="2" Grid.RowSpan="9" Grid.Column="14" Grid.ColumnSpan="3" MouseDown="SixthBig_Field_MouseDown"></Label>
 
-                <Label x:Name="AThirdLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="14" Grid.ColumnSpan="2"></Label>
-                <Label x:Name="BThirdLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="15" Grid.ColumnSpan="2"></Label>
+                <Label x:Name="AFirstLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="4" Grid.ColumnSpan="2" MouseDown="AFirstLittle_Field_MouseDown"></Label>
+                <Label x:Name="BFirstLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="5" Grid.ColumnSpan="2" MouseDown="BFirstLittle_Field_MouseDown"></Label>
 
-                <Label x:Name="AFourthLittle_Field" Grid.Row="5" Grid.RowSpan="5" Grid.Column="4" Grid.ColumnSpan="2"></Label>
-                <Label x:Name="BFourthLittle_Field" Grid.Row="6" Grid.RowSpan="5" Grid.Column="5" Grid.ColumnSpan="2"></Label>
+                <Label x:Name="ASecondLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="9" Grid.ColumnSpan="2" MouseDown="ASecondLittle_Field_MouseDown"></Label>
+                <Label x:Name="BSecondLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="10" Grid.ColumnSpan="2" MouseDown="BSecondLittle_Field_MouseDown"></Label>
 
-                <Label x:Name="AFifthLittle_Field" Grid.Row="5" Grid.RowSpan="5" Grid.Column="9" Grid.ColumnSpan="2"></Label>
-                <Label x:Name="BFifthLittle_Field" Grid.Row="6" Grid.RowSpan="5" Grid.Column="10" Grid.ColumnSpan="2"></Label>
+                <Label x:Name="AThirdLittle_Field" Grid.Row="0" Grid.RowSpan="5" Grid.Column="14" Grid.ColumnSpan="2" MouseDown="AThirdLittle_Field_MouseDown"></Label>
+                <Label x:Name="BThirdLittle_Field" Grid.Row="1" Grid.RowSpan="5" Grid.Column="15" Grid.ColumnSpan="2" MouseDown="BThirdLittle_Field_MouseDown"></Label>
 
-                <Label x:Name="ASixthLittle_Field" Grid.Row="5" Grid.RowSpan="5" Grid.Column="14" Grid.ColumnSpan="2"></Label>
-                <Label x:Name="BSixthLittle_Field" Grid.Row="6" Grid.RowSpan="5" Grid.Column="15" Grid.ColumnSpan="2"></Label>
+                <Label x:Name="AFourthLittle_Field" Grid.Row="5" Grid.RowSpan="5" Grid.Column="4" Grid.ColumnSpan="2" MouseDown="AFourthLittle_Field_MouseDown"></Label>
+                <Label x:Name="BFourthLittle_Field" Grid.Row="6" Grid.RowSpan="5" Grid.Column="5" Grid.ColumnSpan="2" MouseDown="BFourthLittle_Field_MouseDown"></Label>
+
+                <Label x:Name="AFifthLittle_Field" Grid.Row="5" Grid.RowSpan="5" Grid.Column="9" Grid.ColumnSpan="2" MouseDown="AFifthLittle_Field_MouseDown"></Label>
+                <Label x:Name="BFifthLittle_Field" Grid.Row="6" Grid.RowSpan="5" Grid.Column="10" Grid.ColumnSpan="2" MouseDown="BFifthLittle_Field_MouseDown"></Label>
+
+                <Label x:Name="ASixthLittle_Field" Grid.Row="5" Grid.RowSpan="5" Grid.Column="14" Grid.ColumnSpan="2" MouseDown="ASixthLittle_Field_MouseDown"></Label>
+                <Label x:Name="BSixthLittle_Field" Grid.Row="6" Grid.RowSpan="5" Grid.Column="15" Grid.ColumnSpan="2" MouseDown="BSixthLittle_Field_MouseDown"></Label>
             </Grid>
         </Label>
 
-        <Label Background="AliceBlue" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
-            <Grid>
+        <Label x:Name="L_Pl_Field" IsEnabled="False"  Background="Black" BorderBrush="Black" BorderThickness="5" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,4.6,-0.4,-0.2">
+            <Grid x:Name="Pl_Field" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -107,41 +128,51 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" x:Name="Card_One" Grid.Column="0">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                </Label>
-                <Label x:Name="Card_Two" Grid.Column="1"></Label>
-                <Label x:Name="Card_Three" Grid.Column="2"></Label>
-                <Label x:Name="Card_Four" Grid.Column="3"></Label>
-                <Label x:Name="Card_Five" Grid.Column="4"></Label>
-                <Label VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" x:Name="Card_Six" Grid.Column="5">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                </Label>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label VerticalContentAlignment="Stretch" Style="{DynamicResource LabelCardStyle}" HorizontalContentAlignment="Stretch" x:Name="Card_One" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" MouseDown="Card_One_MouseDown"/>
+                <Label x:Name="Card_Two" Style="{DynamicResource LabelCardStyle}" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" MouseDown="Card_Two_MouseDown"></Label>
+                <Label x:Name="Card_Three" Style="{DynamicResource LabelCardStyle}" Grid.Column="6" Grid.RowSpan="3" Grid.ColumnSpan="3" MouseDown="Card_Three_MouseDown"></Label>
+                <Label x:Name="Card_Four" Style="{DynamicResource LabelCardStyle}" Grid.Column="9" Grid.RowSpan="3" Grid.ColumnSpan="3" MouseDown="Card_Four_MouseDown"></Label>
+                <Label x:Name="Card_Five" Style="{DynamicResource LabelCardStyle}" Grid.Column="12" Grid.RowSpan="3" Grid.ColumnSpan="3" MouseDown="Card_Five_MouseDown"></Label>
+                <Label VerticalContentAlignment="Stretch" Style="{DynamicResource LabelCardStyle}" HorizontalContentAlignment="Stretch" x:Name="Card_Six" Grid.Column="15" Grid.RowSpan="3" Grid.ColumnSpan="3" MouseDown="Card_Six_MouseDown"/>
+
+                <Button  x:Name="B_Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image  Style="{DynamicResource Img_ArrowStyle}" Source="C:\Users\User\Desktop\L_Arrow.png"/>
+                </Button>
+                <Button x:Name="B_Right"  Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="17" Grid.Row="0" Grid.RowSpan="3">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Style="{StaticResource Img_ArrowStyle}" Source="C:\Users\User\Desktop\R_Arrow.png"/>
+                </Button>
+
             </Grid>
         </Label>
-        
+
     </Grid>
 </Window>

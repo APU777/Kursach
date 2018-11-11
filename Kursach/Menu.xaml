@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kursach"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800" Background="Black">
+        Title="Menu" Height="450" Width="800" Background="Black" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -37,8 +37,8 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Ellipse Grid.Column= "0" Fill="Aqua"/>
-            <Ellipse Grid.Column= "1" Fill="OrangeRed"/>
+            <Ellipse Grid.Column= "0" Fill="DarkBlue"/>
+            <Ellipse Grid.Column= "1" Fill="DarkRed"/>
         </Grid>
     </Grid>
 </Window>

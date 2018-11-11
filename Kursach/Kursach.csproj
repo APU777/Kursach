@@ -67,6 +67,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Artificial intelligence.cs" />
     <Compile Include="Gameplay.cs" />
     <Compile Include="Logic_sAlgorithms.cs" />
     <Compile Include="MainWindow.xaml.cs">

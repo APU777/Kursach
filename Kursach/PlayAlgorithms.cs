@@ -16,6 +16,7 @@ namespace Kursach
             for (int index = 0; index < PlayersCards.Length; ++index)
                 PlayersCards[index] = Logic_sAlgorithms.DistributeCards(ref PlayersCards[index], ref CardsStore);
         }
+
         public static int TrumpCARD (ref Label _LearImg, ref float[] Array)
         {
             int TC = Logic_sAlgorithms._TrumpCard();
@@ -24,6 +25,7 @@ namespace Kursach
 
             return TC;
         }
+
         public static int CheckPlayerStep(ref List<float>[] PlayersCards, ref int _TrumpCard)
         {
             int FIRST_PLAYER = 0;
@@ -38,8 +40,18 @@ namespace Kursach
             }
             return FIRST_PLAYER;
         }
-        
-       
-        
+
+        public static void Steps(int Number_Pl, Label Field)
+        {
+            if(Number_Pl == 0)
+            {
+                Field.IsEnabled = true;
+            }
+                  
+
+
+
+        }
+
     }
 }
