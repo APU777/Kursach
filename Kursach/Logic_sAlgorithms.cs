@@ -13,6 +13,7 @@ namespace Kursach
 {
     internal static class Logic_sAlgorithms
     {
+        public static List<float> Variable = new List<float>();
         public static void MixCards(ref float[] _Array)
         {
             Random random = new Random();
@@ -62,19 +63,43 @@ namespace Kursach
 
         public static void LookCards(ref List<float> Pl_Cards, ref Label[] Pl_CardsImage)
         {
+            Pl_Cards = Pl_Cards.OrderBy(OBfMnToMx => OBfMnToMx).ToList();
             for (int index = 0; index < Pl_CardsImage.Length; ++index)
             {
-                Pl_CardsImage[index].Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Kursach;component/CardsImage/" + Pl_Cards[index] + ".png")));
-
+                if (index < Pl_Cards.Count)
+                {
+                    Pl_CardsImage[index].Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Kursach;component/CardsImage/" + Pl_Cards[index] + ".png")));
+                }
+                else
+                {
+                    Pl_CardsImage[index].Background = null;
+                    Pl_CardsImage[index].BorderThickness = new Thickness(1);
+                }
             }
         }
 
         public static bool BeatCard(float _Card, float _EnemyCard, int _TrumpCard)
         {
-            if (_Card > _EnemyCard || (int)_Card == _TrumpCard && (int)_Card != (int)_EnemyCard)
+            int Cd = int.Parse(_Card.ToString().ElementAt(2).ToString());
+            int ECd = int.Parse(_EnemyCard.ToString().ElementAt(2).ToString());
+
+            if (_Card > _EnemyCard && Cd == ECd)
+                return true;
+            else if (Cd == _TrumpCard && _Card > _EnemyCard)
+                return true;
+            else if (Cd == _TrumpCard && Cd != ECd)
                 return true;
             else
                 return false;
+        }
+
+        public static void BBeated(ref List <float> LiF, ref Grid BigField)
+        {
+            for(int index = 5; index < 23; ++index)
+            {
+                ((Label)BigField.Children[index]).Background = null;
+            }
+            LiF.Clear();
         }
 
         public static void VisualAnimation(ref Grid BigField)
@@ -86,17 +111,28 @@ namespace Kursach
 
            if(Check)
             {
-                for(int i = 5; i < 11; i+=2)
+                for(int index = 5; index < 11; index+=2)
                 {
-                    if (((Label)BigField.Children[i]).Background == null)
+                    if (((Label)BigField.Children[index]).Background == null)
                     {
-                        ((Label)BigField.Children[i]).BorderBrush = Brushes.White;
-                        ((Label)BigField.Children[i]).BorderThickness = new Thickness(7);
+                        ((Label)BigField.Children[index]).BorderBrush = Brushes.White;
+                        ((Label)BigField.Children[index]).BorderThickness = new Thickness(7);
+                        break;
+                    }
+                }
+            }
+           else
+            {
+                for (int index = 11; index < 23; index += 2)
+                {
+                    if (((Label)BigField.Children[index]).Background == null)
+                    {
+                        ((Label)BigField.Children[index]).BorderBrush = Brushes.White;
+                        ((Label)BigField.Children[index]).BorderThickness = new Thickness(7);
                         break;
                     }
                 }
             }
         }
-
     }
 }

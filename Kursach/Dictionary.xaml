@@ -132,11 +132,11 @@
                             <Setter TargetName="BRT" Property="BorderBrush" Value="DarkGoldenrod"/>
                             <Setter TargetName="BRT" Property="BorderThickness" Value="7"/>
                         </Trigger>
-                        <Trigger  Property="IsMouseOver" Value="False">
-                            <Setter TargetName="BRT" Property="BorderBrush" Value="DarkRed"/>
+                        <!--<Trigger  Property="IsFocused" Value="True">
+                            --><!--<Setter TargetName="BRT" Property="BorderBrush" Value="DarkRed"/>
                             <Setter TargetName="BRT" Property="BorderThickness" Value="4"/>
-                            <Setter TargetName="BRT" Property="Margin" Value="0"/>
-                        </Trigger>
+                            <Setter TargetName="BRT" Property="Margin" Value="0"/>--><!--
+                        </Trigger>-->
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -41,16 +42,16 @@ namespace Kursach
             return FIRST_PLAYER;
         }
 
-        public static void Steps(int Number_Pl, Label Field)
+        public static Brush Steps(Label Field, float Pl_Card, int _TrumpCard, float En_Card)
         {
-            if(Number_Pl == 0)
+            
+            if (Logic_sAlgorithms.BeatCard(Pl_Card, En_Card, _TrumpCard))
             {
-                Field.IsEnabled = true;
+                Field.BorderBrush = null;
+                return new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Kursach;component/CardsImage/" + Pl_Card + ".png")));
             }
-                  
-
-
-
+            MessageBox.Show("Sorry, but you can't beat this card.");
+            return null;
         }
 
     }
